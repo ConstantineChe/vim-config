@@ -2,6 +2,8 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 colorscheme morning
+let NERDTreeDirArrows = 0
+let NERDTreeMinimalUI = 1
 let mapleader = ","
 map <silent><A-Right> :tabnext<CR> 
 map <silent><A-Left> :tabprevious<CR>
@@ -11,12 +13,15 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
-map <leader>fn :bn<CR>
-map <leader>fb :bp<CR>
+map <leader>cp :CtrlP<CR>
+map <leader>cm :CtrlPMixed<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>td <Plug>TaskList
+map <leader>fn :bn<CR>
+map <leader>fb :bp<CR>
+set title
 set nu
 set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
