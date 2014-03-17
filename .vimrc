@@ -1,9 +1,9 @@
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect() "some test
 call pathogen#helptags()
-colorscheme morning
+colorscheme morning " not nice, but ok for now
 let NERDTreeDirArrows = 0
-let NERDTreeMinimalUI = 1
+let NERDTreeMinimalUI = 0
 let mapleader = ","
 map <silent><A-Right> :tabnext<CR> 
 map <silent><A-Left> :tabprevious<CR>
