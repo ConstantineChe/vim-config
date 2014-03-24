@@ -2,7 +2,7 @@ filetype off
 call pathogen#infect() "some test
 call pathogen#helptags()
 colorscheme morning " not nice, but ok for now
-let NERDTreeDirArrows = 0
+let NERDTreeDirArrows = 1 
 let NERDTreeMinimalUI = 0
 let mapleader = ","
 map <silent><A-Right> :tabnext<CR> 
