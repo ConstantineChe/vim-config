@@ -1,7 +1,7 @@
 filetype off
 call pathogen#infect() "some test
 call pathogen#helptags()
-colorscheme morning " not nice, but ok for now
+" colorscheme morning " not nice, but ok for now
 let NERDTreeDirArrows = 1 
 let NERDTreeMinimalUI = 0
 let mapleader = ","
@@ -21,6 +21,8 @@ map <leader>n :NERDTreeToggle<CR>
 map <leader>td <Plug>TaskList
 map <leader>fn :bn<CR>
 map <leader>fb :bp<CR>
+map <leader>sp :set paste<CR>
+map <leader>snp :set nopaste<CR>
 set title
 set nu
 set textwidth=79  " lines longer than 79 columns will be broken
